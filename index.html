@@ -1,1 +1,626 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibracom - Agence de Marketing Digital</title>
+    <meta name="description" content="Vibracom est une agence marketing spécialisée en branding, marketing digital, réseaux sociaux et développement web. Nous donnons vie à votre marque.">
+    <meta name="author" content="Vibracom">
+    <meta name="geo.region" content="TN-NB">
+    <meta name="geo.placename" content="Nabeul">
+    
+    <link rel="canonical" href="https://matup13.github.io/Vibracom-agency/">
+    
+    <meta name="robots" content="index, follow">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vibracom",
+      "image": "https://matup13.github.io/Vibracom-agency/images/logo.png",
+      "description": "Agence spécialisée en marketing, marketing digital et développement web. Nous ne sommes pas une simple agence, nous sommes un partenaire d'affaires fiable et efficace.",
+      "url": "https://matup13.github.io/Vibracom-agency/",
+      "telephone": "+21656172572",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pépinière d'entreprises Elan Technologique - Nabeul",
+        "addressLocality": "Nabeul",
+        "addressRegion": "Nabeul",
+        "postalCode": "8000",
+        "addressCountry": "TN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/vibracom.agency",
+        "https://www.linkedin.com/company/vibracom-agency",
+        "https://www.instagram.com/vibracom.agency"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://matup13.github.io/Vibracom-agency/"
+        }
+      ]
+    }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z9SW02ZXGZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z9SW02ZXGZ');
+    </script>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://matup13.github.io/Vibracom-agency/">
+    <meta property="og:title" content="Vibracom - Agence de Marketing Digital">
+    <meta property="og:description" content="Vibracom est une agence marketing spécialisée en branding, marketing digital, réseaux sociaux et développement web. Nous donnons vie à votre marque.">
+    <meta property="og:image" content="https://matup13.github.io/Vibracom-agency/images/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://matup13.github.io/Vibracom-agency/">
+    <meta property="twitter:title" content="Vibracom - Agence de Marketing Digital">
+    <meta property="twitter:description" content="Vibracom est une agence marketing spécialisée en branding, marketing digital, réseaux sociaux et développement web. Nous donnons vie à votre marque.">
+    <meta property="twitter:image" content="https://matup13.github.io/Vibracom-agency/images/logo.png">
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap">
+    </noscript>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #e74c3c;
+        --text-color: #333;
+        --light-bg: #f9f9f9;
+        --white: #ffffff;
+        --dark-bg: #1a1a1a; /* Nouvelle couleur pour les sections sombres */
+        --light-grey: #e0e0e0; /* Nouvelle couleur pour les bordures/séparateurs */
+      }
+      
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+        overflow-x: hidden;
+        line-height: 1.6;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+        color: var(--primary-color);
+        line-height: 1.2;
+      }
+      
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+      }
+      
+      .section-padding {
+          padding: 80px 0; /* Espacement standard entre les sections */
+      }
+      
+      .section-title {
+          font-size: 2.8em;
+          text-align: center;
+          margin-bottom: 60px;
+          position: relative;
+          padding-bottom: 20px;
+          color: var(--primary-color);
+      }
+      
+      .section-title::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translateX(-50%);
+          width: 80px;
+          height: 4px;
+          background-color: var(--secondary-color);
+          border-radius: 2px;
+      }
 
+      .header { 
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 15px 0;
+        transition: all 0.3s ease;
+        opacity: 0; 
+        transform: translateY(-20px); 
+        background: var(--white); /* Couleur par défaut */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Légère ombre par défaut */
+      }
+      
+      .hero { 
+        opacity: 0; 
+        position: relative;
+        height: 100vh;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
+        overflow: hidden; /* Masque ce qui dépasse */
+      }
+      
+      .hero-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Recouvre toute la zone */
+          z-index: -1; /* Place l'image en arrière-plan */
+          filter: brightness(0.7); /* Assombrit légèrement l'image pour la lisibilité du texte */
+      }
+
+      .header, .hero { transition: all 0.8s ease; } /* Transition plus douce */
+      .header.loaded, .hero.loaded { opacity: 1; transform: translateY(0); }
+      
+      .header.sticky {
+        background: rgba(255,255,255,0.98);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        padding: 10px 0;
+        animation: slideDown 0.3s ease;
+      }
+      
+      @keyframes slideDown {
+        from { transform: translateY(-100%); }
+        to { transform: translateY(0); }
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        text-align: center;
+        border: 2px solid; /* Pour le contour par défaut */
+      }
+      
+      .btn-primary {
+        background-color: var(--secondary-color);
+        color: var(--white);
+        border-color: var(--secondary-color);
+      }
+      
+      .btn-primary:hover {
+        background-color: transparent;
+        color: var(--secondary-color);
+      }
+
+      .btn-outline {
+          background-color: transparent;
+          color: var(--white);
+          border-color: var(--white);
+      }
+
+      .btn-outline:hover {
+          background-color: var(--secondary-color);
+          border-color: var(--secondary-color);
+          color: var(--white);
+      }
+
+      .btn-dark { /* Nouveau bouton pour les sections sombres */
+          background-color: var(--primary-color);
+          color: var(--white);
+          border-color: var(--primary-color);
+      }
+
+      .btn-dark:hover {
+          background-color: transparent;
+          color: var(--primary-color);
+      }
+
+    </style>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KF9D8V23"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo-trans-2.svg" alt="Vibracom Logo" width="180" height="40" loading="lazy">
+            </a>
+            <nav class="nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#home" aria-current="page">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Ouvrir/fermer le menu" aria-expanded="false">
+                <span class="menu-icon"><i class="fas fa-bars"></i></span>
+                <span class="close-icon"><i class="fas fa-times"></i></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <picture>
+            <source srcset="images/hero-bg.webp" type="image/webp">
+            <img src="images/hero-bg.jpg" 
+                 alt="Équipe Vibracom en réunion"
+                 class="hero-bg" 
+                 loading="eager" 
+                 fetchpriority="high"
+                 width="1920" 
+                 height="1080">
+        </picture>
+        <div class="container hero-content-wrapper">
+            <div class="hero-content animate-fade-in-up">
+                <span class="welcome-text">BIENVENUE CHEZ VIBRACOM</span>
+                <h1>Nous sommes une agence digitale créative</h1>
+                [cite_start]<p class="subtitle">Nam libero tempore cum soluta nobis est eligendi cumaue nihil imedit auomae nelaceat ossimus omnis voluetas raellendus.</p> [cite: 10]
+                <div class="hero-buttons">
+                    [cite_start]<a href="#contact" class="btn btn-primary">Contactez-nous</a> [cite: 11]
+                    [cite_start]<a href="#about" class="btn btn-outline">En savoir plus →</a> [cite: 12]
+                </div>
+            </div>
+            <div class="experience-card animate-fade-in-right">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                [cite_start]<h3>30+</h3> [cite: 13]
+                [cite_start]<p>Années d'Expérience</p> [cite: 13]
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us section-padding" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image animate-fade-in-left">
+                    <img src="images/about-team.jpg" alt="Équipe de travail de Vibracom" width="600" height="400" loading="lazy">
+                    <div class="play-button"><i class="fas fa-play"></i></div>
+                </div>
+                <div class="about-content animate-fade-in-right">
+                    [cite_start]<span class="subheading">À PROPOS DE NOUS</span> [cite: 14]
+                    [cite_start]<h2 class="section-title-left">Agence digitale créative avec expérience</h2> [cite: 15]
+                    [cite_start]<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. [cite: 16]</p>
+                    <ul class="about-features">
+                        [cite_start]<li><i class="fas fa-check-circle"></i> Excepteur sint occaecat cupidatat non proident... [cite: 17]</li>
+                        [cite_start]<li><i class="fas fa-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit esse... [cite: 17]</li>
+                        [cite_start]<li><i class="fas fa-check-circle"></i> Rerum hic tenetur a sapiente delectus aut occaecati. [cite: 17]</li>
+                    </ul>
+                    [cite_start]<a href="#contact" class="btn btn-primary">Lire plus →</a> [cite: 18]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section-padding" id="services">
+        <div class="container">
+            [cite_start]<span class="subheading text-center">CE QUE NOUS FAISONS</span> [cite: 2]
+            [cite_start]<h2 class="section-title">Nos services que nous offrons</h2> [cite: 3]
+            <div class="services-grid">
+                <div class="service-item animate-fade-in-up">
+                    <div class="service-icon">
+                        <img src="images/icon-app-dev.png" alt="Icône Développement App" width="80" height="80" loading="lazy">
+                    </div>
+                    [cite_start]<h3>Développement d'Applications</h3> [cite: 21]
+                    [cite_start]<p>Molestiae non recusandae itaque earum rerum hic tenetur a sapiente delectus aut reiciendis voluptatibus maiores alias consequatur aut.</p> [cite: 21]
+                    [cite_start]<a href="#" class="read-more">Lire plus →</a> [cite: 22]
+                </div>
+                <div class="service-item animate-fade-in-up delay-1">
+                    <div class="service-icon">
+                        <img src="images/icon-ai-dev.png" alt="Icône Développement IA" width="80" height="80" loading="lazy">
+                    </div>
+                    [cite_start]<h3>Développement IA</h3> [cite: 23]
+                    [cite_start]<p>Molestiae non recusandae itaque earum rerum hic tenetur a sapiente delectus aut reiciendis voluptatibus maiores alias consequatur aut.</p> [cite: 24, 25]
+                    [cite_start]<a href="#" class="read-more">Lire plus →</a> [cite: 26]
+                </div>
+                <div class="service-item animate-fade-in-up delay-2">
+                    <div class="service-icon">
+                        <img src="images/icon-figma-design.png" alt="Icône Figma Design" width="80" height="80" loading="lazy">
+                    </div>
+                    [cite_start]<h3>Design Figma</h3> [cite: 27]
+                    [cite_start]<p>Molestiae non recusandae itaque earum rerum hic tenetur a sapiente delectus aut reiciendis voluptatibus maiores alias consequatur aut.</p> [cite: 28]
+                    [cite_start]<a href="#" class="read-more">Lire plus →</a> [cite: 29]
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="cta-banner section-padding animate-fade-in">
+        <div class="container">
+            <div class="cta-content">
+                [cite_start]<h3>Reprehenderit qui in ea voluptate velit esse quam nihil molestiae conten cum fugiat quo voluptas.</h3> [cite: 19]
+                [cite_start]<a href="#contact" class="btn btn-primary">Commencer →</a> [cite: 20]
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section section-padding">
+        <picture>
+            <source srcset="images/stats-bg.webp" type="image/webp">
+            <img src="images/stats-bg.jpg" 
+                 alt="Équipe en pleine discussion"
+                 class="stats-bg" 
+                 loading="lazy" 
+                 width="1920" 
+                 height="1080">
+        </picture>
+        <div class="container stats-content-wrapper">
+            <div class="stats-grid">
+                <div class="stat-item animate-fade-in-up">
+                    [cite_start]<span class="stat-number">3,860</span> [cite: 32]
+                    [cite_start]<p class="stat-text">Clients Satisfaits</p> [cite: 32]
+                </div>
+                <div class="stat-item animate-fade-in-up delay-1">
+                    [cite_start]<span class="stat-number">8,550</span> [cite: 33]
+                    [cite_start]<p class="stat-text">Projets Réalisés</p> [cite: 33]
+                </div>
+                <div class="stat-item animate-fade-in-up delay-2">
+                    [cite_start]<span class="stat-number">90+</span> [cite: 34]
+                    [cite_start]<p class="stat-text">Membres d'Équipe</p> [cite: 34]
+                </div>
+                <div class="stat-item animate-fade-in-up delay-3">
+                    [cite_start]<span class="stat-number">180+</span> [cite: 36]
+                    [cite_start]<p class="stat-text">Prix Gagnés</p> [cite: 36]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            [cite_start]<span class="subheading text-center">NOTRE PORTFOLIO</span> [cite: 38]
+            [cite_start]<h2 class="section-title">Découvrez nos réalisations exceptionnelles</h2> [cite: 39]
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-fade-in-up">
+                    <img src="images/portfolio-web-design-1.jpg" alt="Exemple de design web" width="400" height="300" loading="lazy">
+                    <div class="portfolio-overlay">
+                        [cite_start]<h3>Design Web</h3> [cite: 40]
+                        [cite_start]<p>Duis aute irure dolor in reprehenderit... [cite: 41]</p>
+                        <a href="#" class="btn btn-dark">Voir projet</a>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-fade-in-up delay-1">
+                    <img src="images/portfolio-app-dev.jpg" alt="Exemple d'application mobile" width="400" height="300" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Développement App</h3>
+                        <p>Description du projet d'application.</p>
+                        <a href="#" class="btn btn-dark">Voir projet</a>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-fade-in-up delay-2">
+                    <img src="images/portfolio-branding.jpg" alt="Exemple de branding" width="400" height="300" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Branding</h3>
+                        <p>Description du projet de branding.</p>
+                        <a href="#" class="btn btn-dark">Voir projet</a>
+                    </div>
+                </div>
+                <div class="portfolio-item animate-fade-in-up delay-3">
+                    <img src="images/portfolio-marketing.jpg" alt="Exemple de campagne marketing" width="400" height="300" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Marketing Digital</h3>
+                        <p>Description du projet de marketing digital.</p>
+                        <a href="#" class="btn btn-dark">Voir projet</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                [cite_start]<a href="#" class="btn btn-primary">Voir tout →</a> [cite: 48]
+            </div>
+        </div>
+    </section>
+
+    <section class="who-are-we section-padding bg-dark animate-fade-in">
+        <div class="container">
+            <div class="who-are-we-grid">
+                <div class="who-are-we-content animate-fade-in-left">
+                    [cite_start]<span class="subheading">QUI SOMMES-NOUS</span> [cite: 42]
+                    [cite_start]<h2 class="section-title-left text-white">Nous aidons à transformer vos marques numériques</h2> [cite: 43]
+                    [cite_start]<p class="text-white-light">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. [cite: 44]</p>
+                    <div class="mission-vision-grid">
+                        <div class="mission-item">
+                            [cite_start]<h3>Notre Mission</h3> [cite: 46]
+                            [cite_start]<p>Recusandae itaque enim rerum hic tenetur aut reiciendis voluptatibus maiores alias consequatur aut.</p> [cite: 46]
+                        </div>
+                        <div class="vision-item">
+                            [cite_start]<h3>Notre Vision</h3> [cite: 47]
+                            [cite_start]<p>Recusandae itaque enim rerum hic tenetur aut reiciendis voluptatibus maiores alias consequatur aut.</p> [cite: 47]
+                        </div>
+                    </div>
+                </div>
+                <div class="who-are-we-image animate-fade-in-right">
+                    <img src="images/who-are-we-image.jpg" alt="Personnes en réunion de stratégie" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            [cite_start]<span class="subheading text-center">TÉMOIGNAGES</span> [cite: 49]
+            [cite_start]<h2 class="section-title">Ce que nos clients disent de nous</h2> [cite: 50, 51]
+            <div class="testimonials-slider">
+                <div class="testimonial-item animate-fade-in-up">
+                    [cite_start]<p class="testimonial-text">"Rum sute mare der voluptar fugiet. peraturent bccsecat cupidita non broill want in all officede desem."</p> [cite: 52]
+                    <div class="testimonial-author">
+                        <img src="images/client-1.jpg" alt="Photo de Devia Rack" width="80" height="80" loading="lazy">
+                        <div>
+                            [cite_start]<h4>Devia Rack</h4> [cite: 53]
+                            [cite_start]<span>PDG de SomeWhere</span> [cite: 53]
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item animate-fade-in-up delay-1">
+                    [cite_start]<p class="testimonial-text">"Duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur sirit occaecat cupidata non proident, sunt in culpa qui office deserunt mollit anim laborum."</p> [cite: 55]
+                    <div class="testimonial-author">
+                        <img src="images/client-2.jpg" alt="Photo de Kevin Andrew" width="80" height="80" loading="lazy">
+                        <div>
+                            [cite_start]<h4>Kevin Andrew</h4> [cite: 56]
+                            [cite_start]<span>Manager Assistant</span> [cite: 56]
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item animate-fade-in-up delay-2">
+                    [cite_start]<p class="testimonial-text">"Aut rune door in reprehender voluptime wwiit esga citum amore fugiet.pac occaecat cupidita non pedisi cede meant."</p> [cite: 58, 59]
+                    <div class="testimonial-author">
+                        <img src="images/client-3.jpg" alt="Photo d'Alina Jemes" width="80" height="80" loading="lazy">
+                        <div>
+                            [cite_start]<h4>Alina Jemes</h4> [cite: 60]
+                            <span>Graphiste</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section section-padding bg-dark" id="team">
+        <div class="container">
+            [cite_start]<span class="subheading text-center text-white">NOTRE ÉQUIPE</span> [cite: 62]
+            [cite_start]<h2 class="section-title text-white">Les membres de notre agence</h2> [cite: 63]
+            <div class="team-grid">
+                <div class="team-member animate-fade-in-up">
+                    <img src="images/team-member-1.jpg" alt="Photo de Been James" width="250" height="250" loading="lazy">
+                    [cite_start]<h4>Been James</h4> [cite: 64]
+                    [cite_start]<span>Fondateur & Head</span> [cite: 64]
+                    <div class="social-links-team">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="team-member animate-fade-in-up delay-1">
+                    <img src="images/team-member-2.jpg" alt="Photo de Carly Neith" width="250" height="250" loading="lazy">
+                    [cite_start]<h4>Carly Neith</h4> [cite: 65]
+                    [cite_start]<span>Web Designer</span> [cite: 65]
+                    <div class="social-links-team">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="team-member animate-fade-in-up delay-2">
+                    <img src="images/team-member-3.jpg" alt="Photo de Trent Jeo" width="250" height="250" loading="lazy">
+                    [cite_start]<h4>Trent Jeo</h4> [cite: 66]
+                    [cite_start]<span>Développeur</span> [cite: 66]
+                    <div class="social-links-team">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <span class="subheading text-center">CONTACTEZ-NOUS</span>
+            <h2 class="section-title">Nous serions ravis de discuter de votre projet</h2>
+            <div class="contact-grid">
+                <div class="contact-info animate-fade-in-left">
+                    <h3>Informations de contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Pépinière d'entreprises Elan Technologique - Nabeul, 8000, Tunisie</p>
+                    <p><i class="fas fa-phone"></i> +216 56 172 572</p>
+                    <p><i class="fas fa-envelope"></i> contactvibracom@gmail.com</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vibracom.agency" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/vibracom.agency" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/vibracom-agency" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-fade-in-right">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Votre Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="Vibracom Logo" width="150" height="35" loading="lazy">
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contactvibracom@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +216 56 172 572</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vibracom. [cite_start]Tous droits réservés. [cite: 67]</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/vibracom.agency" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/vibracom.agency" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/vibracom-agency" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-cta">
+        <a href="#contact" class="btn-pulse" aria-label="Contact rapide">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
