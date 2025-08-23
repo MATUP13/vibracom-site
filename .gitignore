@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python virtual env
+venv/
+
+# Node modules
+node_modules/
+
+# Clés SSH et fichiers secrets
+*.pem
+*.key
+*.txt
