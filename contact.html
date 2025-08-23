@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Contact</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS pour décoller le contenu de la navbar fixe */
+        body {
+            padding-top: 70px;
+        }
+        /* Style pour la carte */
+        .map-container {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo Vibracom white.png" alt="Vibracom Logo" width="150" height="40" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#home" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="blog.html">Blog</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section id="contact" class="contact pt-5 pb-5">
+        <div class="container">
+            <div class="text-center">
+                <span class="subheading text-primary fw-bold">CONTACTEZ-NOUS</span>
+                <h2 class="section-title h1 fw-bold mb-5">Nous serions ravis de discuter de votre projet</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-6 animate-fade-in-left">
+                    <h3 class="h4 fw-bold">Informations de contact</h3>
+                    <p><i class="fas fa-map-marker-alt text-primary me-2"></i> Pépinière d'entreprises Elan Technologique - Nabeul, 8000, Tunisie</p>
+                    <p><i class="fas fa-phone text-primary me-2"></i> +216 56 172 572</p>
+                    <p><i class="fas fa-envelope text-primary me-2"></i> contactvibracom@gmail.com</p>
+                    
+                    <div class="map-container mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.758933221949!2d10.742352115277157!3d36.45281579541575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130282688f2195f1%3A0x7d2f954752c08674!2sElan%20Technologique%20Nabeul%20Incubator!5e0!3m2!1sen!2stn!4v1625078400465!5m2!1sen!2stn" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+
+                    <div class="social-links d-flex gap-3 mt-4">
+                        <a href="https://www.facebook.com/vibracom.agency" aria-label="Facebook" class="btn btn-outline-primary rounded-circle"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/vibracom.agency" aria-label="Instagram" class="btn btn-outline-primary rounded-circle"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/vibracom-agency" aria-label="LinkedIn" class="btn btn-outline-primary rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-fade-in-right">
+                    <div class="card shadow p-4">
+                        <h3 class="h4 fw-bold">Envoyez-nous un message</h3>
+                        <form id="contact-form" action="https://formspree.io/f/xzzvakjd" method="POST">
+                            <div class="mb-3">
+                                <label for="contactType" class="form-label fw-bold">Vous êtes :</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="contactType" id="typeParticulier" value="particulier" checked>
+                                    <label class="form-check-label" for="typeParticulier">Un particulier</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="contactType" id="typeEntreprise" value="entreprise">
+                                    <label class="form-check-label" for="typeEntreprise">Une entreprise</label>
+                                </div>
+                            </div>
+                            
+                          
+
+                            <div id="particulierSection">
+                                  <div class="mb-3">
+                                <input type="text" id="name" name="Nom" class="form-control" placeholder="Nom-Prénom" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" id="email" name="Email" class="form-control" placeholder="Votre Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" id="phone" name="Numéro de téléphone" class="form-control" placeholder="Votre Numéro de Téléphone">
+                            </div>
+                                <div class="mb-3">
+                                    <label for="occupationParticulier" class="form-label">Occupation actuelle <span class="text-danger">*</span></label>
+                                    <select id="occupationParticulier" name="Occupation actuelle" class="form-select">
+                                        <option value="">Sélectionnez un type</option>
+                                        <option value="etudiant">Étudiant(e)</option>
+                                        <option value="salarie">Salarié(e)</option>
+                                        <option value="entrepreneur">Entrepreneur</option>
+                                        <option value="createur_contenu">Créateur(trice) de contenu</option>
+                                        <option value="freelancer">Freelancer</option>
+                                        <option value="cadre_marketeur">Cadre Marketeur</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                <div id="otherOccupationParticulierContainer" style="display: none;">
+                                    <div class="mb-3">
+                                        <label for="otherOccupationParticulier" class="form-label">Veuillez préciser votre occupation <span class="text-danger">*</span></label>
+                                        <input type="text" id="otherOccupationParticulier" name="Autre occupation" class="form-control" placeholder="Ex: Profession libérale, etc.">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="entrepriseSection" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="companyName" class="form-label">Raison Sociale de l'entreprise <span class="text-danger">*</span></label>
+                                    <input type="text" id="companyName" name="Raison Sociale de l'entreprise" class="form-control" placeholder="Nom de votre entreprise">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="companyType" class="form-label">Nature de l'entreprise <span class="text-danger">*</span></label>
+                                    <select id="companyType" name="Nature de l'entreprise" class="form-select">
+                                        <option value="">Sélectionnez un type</option>
+                                        <option value="association">Association</option>
+                                        <option value="startup">Startup</option>
+                                        <option value="pme">PME</option>
+                                        <option value="artisan">Artisan</option>
+                                        <option value="boutique">Boutique / Commerce de détail</option>
+                                        <option value="revendeur">Revendeur</option>
+                                        <option value="grande_entreprise">Grande Entreprise</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                                <div id="otherCompanyTypeContainer" style="display: none;">
+                                    <div class="mb-3">
+                                        <label for="otherCompanyType" class="form-label">Veuillez préciser la nature de votre entreprise <span class="text-danger">*</span></label>
+                                        <input type="text" id="otherCompanyType" name="Autre nature de l'entreprise" class="form-control" placeholder="Ex: SARL, EURL, etc.">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactLocation" class="form-label">Emplacement (Ville, Pays)</label>
+                                    <input type="text" id="contactLocation" name="Emplacement" class="form-control" placeholder="Ex: Nabeul, Tunisie">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="website" class="form-label">Lien vers votre site web (si existant)</label>
+                                    <input type="url" id="website" name="Site Web" class="form-control" placeholder="https://votresite.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="socialMedia" class="form-label">Lien vers un réseau social principal (ex: LinkedIn, Facebook)</label>
+                                    <input type="url" id="socialMedia" name="Réseau Social" class="form-control" placeholder="https://linkedin.com/company/votreentreprise">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="activityNature" class="form-label">Nature de l'activité de votre entreprise</label>
+                                    <textarea id="activityNature" name="Nature de l'activité" rows="3" class="form-control" placeholder="Décrivez brièvement votre secteur d'activité et vos produits/services."></textarea>
+                                </div>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="serviceNeeded" class="form-label">Quel service vous intéresse ? <span class="text-danger">*</span></label>
+                                <select id="serviceNeeded" name="Service intéressé" class="form-select" required>
+                                    <option value="">Sélectionnez un besoin</option>
+                                    <option value="branding">Branding & Identité Visuelle</option>
+                                    <option value="marketing_digital">Stratégie Marketing Digital</option>
+                                    <option value="reseaux_sociaux">Gestion des Réseaux Sociaux</option>
+                                    <option value="developpement_web">Développement de Site Web / E-commerce</option>
+                                    <option value="developpement_mobile">Développement d'Application Mobile</option>
+                                    <option value="design_ui_ux">Design UI/UX</option>
+                                    <option value="autre">Autre (précisez ci-dessous)</option>
+                                </select>
+                            </div>
+                            <div id="otherServiceNeededContainer" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="otherServiceNeeded" class="form-label">Veuillez préciser le service <span class="text-danger">*</span></label>
+                                    <input type="text" id="otherServiceNeeded" name="Autre service" class="form-control" placeholder="Ex: Rédaction de contenu, Photographie...">
+                                </div>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Décrivez votre besoin en détail <span class="text-danger">*</span></label>
+                                <textarea id="message" name="Message" rows="5" class="form-control" placeholder="Décrivez votre projet, vos objectifs et toute information pertinente pour nous aider à comprendre votre besoin." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary rounded-pill w-100">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const typeParticulier = document.getElementById('typeParticulier');
+            const typeEntreprise = document.getElementById('typeEntreprise');
+            const particulierSection = document.getElementById('particulierSection');
+            const entrepriseSection = document.getElementById('entrepriseSection');
+            const commonFields = document.querySelectorAll('#name, #email, #phone, #serviceNeeded, #otherServiceNeeded, #message');
+
+            // Champs spécifiques
+            const particulierFields = document.querySelectorAll('#occupationParticulier, #otherOccupationParticulier');
+            const entrepriseFields = document.querySelectorAll('#companyName, #companyType, #otherCompanyType, #contactLocation, #website, #socialMedia, #activityNature');
+            
+            // Éléments pour les champs "Autre"
+            const companyType = document.getElementById('companyType');
+            const otherCompanyTypeContainer = document.getElementById('otherCompanyTypeContainer');
+            const otherCompanyType = document.getElementById('otherCompanyType');
+    
+            const serviceNeeded = document.getElementById('serviceNeeded');
+            const otherServiceNeededContainer = document.getElementById('otherServiceNeededContainer');
+            const otherServiceNeeded = document.getElementById('otherServiceNeeded');
+
+            const occupationParticulier = document.getElementById('occupationParticulier');
+            const otherOccupationParticulierContainer = document.getElementById('otherOccupationParticulierContainer');
+            const otherOccupationParticulier = document.getElementById('otherOccupationParticulier');
+
+            // Fonction générique pour gérer la visibilité des champs "Autre" et les attributs
+            function toggleOtherField(selectElement, otherContainer, otherInput) {
+                if (selectElement.value === 'autre') {
+                    otherContainer.style.display = 'block';
+                    otherInput.setAttribute('required', 'required');
+                } else {
+                    otherContainer.style.display = 'none';
+                    otherInput.removeAttribute('required');
+                    otherInput.value = '';
+                }
+            }
+
+            // Fonction pour ajouter/supprimer l'attribut 'name' des champs
+            function toggleFieldNames(fields, addName) {
+                fields.forEach(field => {
+                    const originalName = field.getAttribute('data-original-name');
+                    if (addName) {
+                        field.setAttribute('name', originalName);
+                    } else {
+                        field.removeAttribute('name');
+                    }
+                });
+            }
+
+            // Fonction pour gérer les attributs `required`
+            function toggleRequired(fields, isRequired) {
+                fields.forEach(field => {
+                    if (isRequired) {
+                        field.setAttribute('required', 'required');
+                    } else {
+                        field.removeAttribute('required');
+                    }
+                });
+            }
+
+            // Fonction principale pour basculer entre les sections
+            function toggleFormSections() {
+                if (typeEntreprise.checked) {
+                    particulierSection.style.display = 'none'; 
+                    entrepriseSection.style.display = 'block';
+                    
+                    // Activer les champs entreprise et désactiver les champs particulier
+                    toggleFieldNames(entrepriseFields, true);
+                    toggleFieldNames(particulierFields, false);
+                    toggleRequired(Array.from(entrepriseFields).filter(f => f.id !== 'contactLocation' && f.id !== 'website' && f.id !== 'socialMedia' && f.id !== 'activityNature'), true);
+                    toggleRequired(particulierFields, false);
+
+                    // Gérer les champs "Autre" de la section Entreprise
+                    toggleOtherField(companyType, otherCompanyTypeContainer, otherCompanyType);
+                } else {
+                    particulierSection.style.display = 'block';
+                    entrepriseSection.style.display = 'none';
+
+                    // Activer les champs particulier et désactiver les champs entreprise
+                    toggleFieldNames(particulierFields, true);
+                    toggleFieldNames(entrepriseFields, false);
+                    toggleRequired(particulierFields, true);
+                    toggleRequired(entrepriseFields, false);
+
+                    // Gérer les champs "Autre" de la section Particulier
+                    toggleOtherField(occupationParticulier, otherOccupationParticulierContainer, otherOccupationParticulier);
+                }
+            }
+
+            // Stocker les noms originaux des champs pour les restaurer
+            particulierFields.forEach(field => field.setAttribute('data-original-name', field.getAttribute('name')));
+            entrepriseFields.forEach(field => field.setAttribute('data-original-name', field.getAttribute('name')));
+            
+            // Écouteurs d'événements pour les boutons radio
+            typeParticulier.addEventListener('change', toggleFormSections);
+            typeEntreprise.addEventListener('change', toggleFormSections);
+    
+            // Écouteurs d'événements pour les listes de choix
+            companyType.addEventListener('change', () => toggleOtherField(companyType, otherCompanyTypeContainer, otherCompanyType));
+            serviceNeeded.addEventListener('change', () => toggleOtherField(serviceNeeded, otherServiceNeededContainer, otherServiceNeeded));
+            occupationParticulier.addEventListener('change', () => toggleOtherField(occupationParticulier, otherOccupationParticulierContainer, otherOccupationParticulier));
+    
+            // Appeler les fonctions au chargement de la page pour définir l'état initial
+            toggleFormSections();
+            toggleOtherField(serviceNeeded, otherServiceNeededContainer, otherServiceNeeded);
+        });
+    </script>
+</body>
+</html>
